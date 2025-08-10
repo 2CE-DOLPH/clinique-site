@@ -1,0 +1,153 @@
+import { Product } from '../types';
+
+export const products: Product[] = [
+  {
+    id: 't-shirt-1',
+    name: 'T-Shirt Classique',
+    basePrice: 25.99,
+    category: 'clothing',
+    description: 'T-shirt en coton premium, parfait pour la personnalisation',
+    images: ['https://images.pexels.com/photos/8532616/pexels-photo-8532616.jpeg'],
+    customizableAreas: [
+      {
+        id: 'front',
+        name: 'Devant',
+        position: { x: 50, y: 30 },
+        size: { width: 200, height: 200 },
+        allowsText: true,
+        allowsImage: true,
+      },
+      {
+        id: 'back',
+        name: 'Dos',
+        position: { x: 50, y: 30 },
+        size: { width: 200, height: 200 },
+        allowsText: true,
+        allowsImage: true,
+      },
+    ],
+    colors: [
+      { name: 'Blanc', value: '#ffffff' },
+      { name: 'Noir', value: '#000000' },
+      { name: 'Bleu Navy', value: '#1e3a8a' },
+      { name: 'Rouge', value: '#dc2626' },
+    ],
+  },
+  {
+    id: 'hoodie-1',
+    name: 'Sweat à Capuche',
+    basePrice: 45.99,
+    category: 'clothing',
+    description: 'Sweat à capuche confortable avec grande zone de personnalisation',
+    images: ['https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg'],
+    customizableAreas: [
+      {
+        id: 'front',
+        name: 'Devant',
+        position: { x: 50, y: 40 },
+        size: { width: 250, height: 200 },
+        allowsText: true,
+        allowsImage: true,
+      },
+    ],
+    colors: [
+      { name: 'Gris', value: '#6b7280' },
+      { name: 'Noir', value: '#000000' },
+      { name: 'Bleu', value: '#3b82f6' },
+      { name: 'Vert', value: '#059669' },
+    ],
+  },
+  {
+    id: 'sneakers-1',
+    name: 'Sneakers Personnalisables',
+    basePrice: 89.99,
+    category: 'shoes',
+    description: 'Baskets haute qualité avec zones personnalisables',
+    images: ['https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg'],
+    customizableAreas: [
+      {
+        id: 'side',
+        name: 'Côté',
+        position: { x: 30, y: 50 },
+        size: { width: 150, height: 100 },
+        allowsText: true,
+        allowsImage: true,
+      },
+    ],
+    colors: [
+      { name: 'Blanc', value: '#ffffff' },
+      { name: 'Noir', value: '#000000' },
+      { name: 'Rouge', value: '#ef4444' },
+    ],
+  },
+  {
+    id: 'tote-bag-1',
+    name: 'Tote Bag Écologique',
+    basePrice: 19.99,
+    category: 'bags',
+    description: 'Sac en toile écologique parfait pour vos créations',
+    images: ['https://images.pexels.com/photos/7679675/pexels-photo-7679675.jpeg'],
+    customizableAreas: [
+      {
+        id: 'front',
+        name: 'Devant',
+        position: { x: 50, y: 40 },
+        size: { width: 200, height: 150 },
+        allowsText: true,
+        allowsImage: true,
+      },
+    ],
+    colors: [
+      { name: 'Naturel', value: '#fef3c7' },
+      { name: 'Noir', value: '#000000' },
+      { name: 'Bleu Marine', value: '#1e40af' },
+    ],
+  },
+  {
+    id: 'cap-1',
+    name: 'Casquette Sport',
+    basePrice: 22.99,
+    category: 'accessories',
+    description: 'Casquette ajustable avec panneau personnalisable',
+    images: ['https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg'],
+    customizableAreas: [
+      {
+        id: 'front-panel',
+        name: 'Panneau avant',
+        position: { x: 50, y: 35 },
+        size: { width: 120, height: 80 },
+        allowsText: true,
+        allowsImage: true,
+      },
+    ],
+    colors: [
+      { name: 'Noir', value: '#000000' },
+      { name: 'Blanc', value: '#ffffff' },
+      { name: 'Rouge', value: '#dc2626' },
+      { name: 'Bleu', value: '#2563eb' },
+    ],
+  },
+  {
+    id: 'mug-1',
+    name: 'Mug Céramique',
+    basePrice: 14.99,
+    category: 'accessories',
+    description: 'Mug en céramique de qualité supérieure',
+    images: ['https://images.pexels.com/photos/6190659/pexels-photo-6190659.jpeg'],
+    customizableAreas: [
+      {
+        id: 'wrap',
+        name: 'Tour du mug',
+        position: { x: 20, y: 40 },
+        size: { width: 250, height: 120 },
+        allowsText: true,
+        allowsImage: true,
+      },
+    ],
+    colors: [
+      { name: 'Blanc', value: '#ffffff' },
+      { name: 'Noir', value: '#000000' },
+      { name: 'Bleu', value: '#3b82f6' },
+    ],
+  },
+];
